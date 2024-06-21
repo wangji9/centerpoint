@@ -4,6 +4,10 @@
 
 计算工件四个角点位置，根据四个角点计算工件的中心点坐标及最小外界矩形。通过标准矩形与最小外接矩形位移量计算旋转角度。
 
+
+![output.gif](output.gif)
+
+
 **_灰度处理_**
 
 ![gray.jpg](result%2F2%2Fgray.jpg)
@@ -35,6 +39,11 @@
 **_结果图_**
 
 ![rect.jpg](result%2F2%2Frect.jpg)
+
+**_实际效果展示_**
+
+[output.mp4](output.mp4)
+
 
 TODO:
 相机标定，计算真实尺度（mm）
