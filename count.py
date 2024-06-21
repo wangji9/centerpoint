@@ -3,7 +3,7 @@ import numpy as np
 
 
 cap = cv2.VideoCapture('video/input.mp4')
-
+out = cv2.VideoWriter('output.mp4', cv2.VideoWriter_fourcc(*'mp4v'), 30.0, (640, 480))
 if not cap.isOpened():
     print("无法打开视频文件或摄像头")
     exit()
@@ -72,9 +72,11 @@ while True:
                     (255, 0, 0), 3)
         cv2.putText(draw_rect, f"Angle: {angle:.2f} rad", (10, 150), cv2.FONT_HERSHEY_SIMPLEX, 1,
                     (0, 0, 255), 3)
-        cv2.imwrite("./{}.jpg".format(count), rotated_canvas)
+        # cv2.imwrite("./{}.jpg".format(count), rotated_canvas)
 
     cv2.imshow('Frame', draw_rect)
+    out.write(draw_rect)
+
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
