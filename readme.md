@@ -1,4 +1,4 @@
-![2.jpg](img%2F2.jpg)![img.png](img.png)
+![2.jpg](img%2F2.jpg)
 
 问题：找到工件标签的中心点（x,y）,旋转角度r，计算工件的尺寸长宽（w,h）。像素值。
 
